@@ -2,8 +2,8 @@
 node_modules/
 /dist
 
-# data folder
-src/Data/*
+
+
 
 # local env files
 .env.local
