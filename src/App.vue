@@ -45,13 +45,13 @@ export default {
 #nav {
   padding: 30px;
   background-color: #000;
-  
+
   div {
     padding: 50px 0;
   }
   a {
     font-weight: bold;
-    color:#fff; 
+    color: #fff;
 
     &.router-link-exact-active {
       color: #42b983;

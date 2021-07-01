@@ -8,11 +8,7 @@
       :projectName="item.project_name"
       :projectLink="item.project_link"
       :tools="item.project_tools"
-    >
-    
-    </project>
-
-    
+    />
   </div>
 </template>
 
