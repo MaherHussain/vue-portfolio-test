@@ -1,14 +1,13 @@
 <template>
   <div id="information">
-    <img src="" alt="">
-    <h1>{{name}}</h1>
-    <p>{{JobTitle}}</p>
+  
+    <h1> Hello I am Maher </h1>
+    
   </div>
 </template>
 <script>
 export default {
-  
-  props:["name","JobTitle","email","social"],
+ 
   name: "Info",
 };
 </script>

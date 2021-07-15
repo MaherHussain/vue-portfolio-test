@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans", sans-serif !important;
+  background-color: black;
+  
+ 
+}
+#app {
+  text-align: center;
+  color: #fff;
+}
+#nav {
+ 
+  padding: 15px ;
+  background-color: rgb(0, 0, 0);
+  z-index:300 ;
+ transition: .5s;
+  border-right: 2px solid #fff;
+  width:120px;
+}
+#menu{
+   display: flex !important;
+  Flex-direction: row;
+   align-items:start;
+  margin : 50px 15px !important;
+  position: relative;
+}
+
+#nav div a {
+  font-weight: bold ;
+  color: #fff ;
+  text-decoration: none;
+ 
+  line-height: 2rem;
+}
+#nav div a.router-link-exact-active {
+  color: #42b983 ;
+}
+.menu-icon{
+  cursor: pointer;
+  
+
+}
+.menu-icon .material-icons{
+  font-size: 30px;
+  position: absolute;
+  border-radius: 2px;
+  border: 1px solid #42b983;
+  transition: border-width 0.3s linear;
+}
+.menu-icon .material-icons:hover{
+border-width: 2px;
+}
+
+.icons{
+  margin: 50px 30px !important;
+}
+.icons div{
+  padding: 15px 0 !important;
+  margin: auto 0 !important;
+  
+}
+.icons div i{
+font-size: 30px;
+}
+.links{
+  display: none;
+  margin: 30px 0 !important;
+}
+/* .icons div a{
+  font-size: 30px !important;
+   margin: auto 0 !important;
+  
+} */
+.links div {
+  font-size: 25px !important;
+   margin: 15px 0 !important;
+    padding-top: 17px  !important;
+  
+}
+.arrow{
+  position: absolute;
+  top:0px;
+  right:0px;
+   border-radius: 50% !important;
+  border: 1px solid #42b983;
+}
+.color-effect{
+  animation-name: color-effect;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  
+}
+@keyframes example {
+   0%   {background: rgb(255, 255, 255);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    50%  {background: linear-gradient(90deg, rgba(7,36,0,1) 0%, rgba(9,98,121,1) 7%, rgba(0,212,255,1) 59%);
+         -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;}
+    100% {background: rgb(255, 255, 255);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;}
+   
+}
+
+#fixed-con{
+  margin-top: 50px !important;
+}
+#fixed-con h1 ,#fixed-con h4 , #fixed-con .social{
+  padding: 30px 0 !important;
+}
+.img-con {
+  position: relative;
+  display: inline-block !important;
+  
+}
+
+.icon-img{
+ width:3px;
+  position: absolute;
+  
+}
+.wave{
+animation: wave-animate 3s infinite ease-out;
+}
+.fullWidth {
+  animation:fullWidth 1s ease-out;
+   
+}
+@keyframes fullWidth {
+  0% {
+    transform: scale(.3);
+  /*  width:20px; */
+    
+  }
+  50% {
+     transform: scale(.7);
+     /* width:40px; */
+  }
+  100% {
+    transform: scale(1);
+   /*  width:50px; */
+   
+  }
+}
+@keyframes wave-animate {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+    transform-origin: center;
+    
+  }
+}
+.icon-img:nth-child(1){
+  top:5px;
+  left:0;
+}
+.icon-img:nth-child(2){
+  top:-10px;
+  left:4em;
+}
+.icon-img:nth-child(3){
+  top:-10px;
+  left:10em;
+}
+.icon-img:nth-child(4){
+  top:-10px;
+  left:14em;
+}
+
+.info-con{
+ background: url(../src/assets/Home/black-white-futuristic-spaces.jpg) no-repeat center center ;
+   
+  text-align: center;
+  height: 100vh;
+  padding-top: 100px !important;
+  color: #fff;
+  margin: 0 !important;
+
+}
+#my-img {
+  max-width: 250px;
+  margin: 0 auto;
+  border-radius: 30% 70% 53% 47% / 16% 0% 100% 84%;
+   border: 5px solid #42b983;
+  
+  box-shadow: 0 4px 2px -2px rgb(12, 11, 11);
+}
+#information{
+  margin-top: 50px !important;
+}

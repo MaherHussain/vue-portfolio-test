@@ -1,0 +1,72 @@
+{
+  "porjects": [
+    {
+      "id": 1,
+      "projectName": "Github user search",
+      "projectImg": "github-search.jpg",
+      "projectLink": "https://github-users-search-maher.herokuapp.com",
+      "langs": ["react.js", "Javascript"]
+    },
+    {
+      "id": 2,
+      "projectName": "Aarhus hostel-training project",
+      "projectImg": "Aarhus-hostel.jpg",
+      "projectLink": "https://github.com/MaherHussain/hostel-project",
+      "langs": ["html5", "css3", "Javascript", "asp.net mvc5"]
+    },
+    {
+      "id": 3,
+      "projectName": "Skordetid",
+      "projectImg": "skordetid.jpg",
+      "projectLink": "https://citypolarna.se/skordetid/",
+      "langs": ["html5", "css3", "Javascript"]
+    },
+    {
+      "id": 4,
+      "projectName": "Unervisning Protal",
+      "projectImg": "Unervisning-Protal.jpg",
+      "projectLink": "https://ibrahimdh.dk/",
+      "langs": ["wordpress"]
+    },
+
+    {
+      "id": 5,
+      "projectName": "portfolio-umbraco",
+      "projectImg": "portfolio-umbraco.jpg",
+      "projectLink": "http://maherweb.dk/",
+      "langs": ["umbracco", "html5", "css3"]
+    },
+    {
+      "id": 6,
+      "projectName": "portfolio-react",
+      "projectImg": "portfolio-react.jpg",
+      "projectLink": "https://maher-portfolio.netlify.app/portfolio",
+      "langs": ["umbracco", "html5", "css3"]
+    },
+    {
+      "id": 7,
+      "projectName": "run it ",
+      "projectImg": "runit .jpg",
+      "projectLink": "https://github.com/MaherHussain/FinalExsam",
+      "langs": ["asp.net mvc5", "html5", "css3", "Javascript"]
+    },
+    {
+      "id": 8,
+      "projectName": "Okla køkken",
+      "projectImg": "Okla-kokken.jpg",
+      "projectLink": "http://www.oklaskoekken.dk/",
+      "langs": ["umbraco", "html5", "css3", "Javascript"]
+    }
+  ],
+  "skills": [
+    { "id": 1, "skillName": "Html5 && css3", "skillImg": "html.png" },
+    { "id": 2, "skillName": "Javascript", "skillImg": "javascript.png" },
+    { "id": 3, "skillName": "React.js", "skillImg": "react.png" },
+    { "id": 4, "skillName": "Vue.js", "skillImg": "vue.png" },
+    { "id": 5, "skillName": "Node.js", "skillImg": "node.png" },
+    { "id": 6, "skillName": "wordpress", "skillImg": "wordpress.png" },
+    { "id": 7, "skillName": "git && github", "skillImg": "git.png" },
+    { "id": 8, "skillName": "umbraco", "skillImg": "umbraco.png" },
+    { "id": 4, "skillName": "asp.net " ,"skillImg":"asp.png"}
+  ]
+}
