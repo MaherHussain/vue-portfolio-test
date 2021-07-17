@@ -5,11 +5,11 @@
         <div class="col-1">
           <NavBar />
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <GlobalInfo />
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-12">
-          <router-view />
+      
+        <div class="col-lg-11 " >
+          <div class="content">
+            <router-view />
+          </div>
         </div>
       </div>
     </div>
@@ -19,13 +19,13 @@
 <script>
 import NavBar from "@/global/NavBar.vue";
 
-import GlobalInfo from "@/global/globalInfo.vue";
+
 export default {
  
   name: "App",
   components: {
     NavBar,
-    GlobalInfo
+   
   },
 };
 </script>

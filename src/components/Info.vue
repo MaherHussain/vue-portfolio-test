@@ -1,13 +1,19 @@
 <template>
   <div id="information">
   
-    <h1> Hello I am Maher </h1>
+    <global-info />
     
   </div>
 </template>
 <script>
+
+import globalInfo from '../global/globalInfo.vue';
 export default {
+  components: { globalInfo },
  
   name: "Info",
+ 
+    
+  
 };
 </script>

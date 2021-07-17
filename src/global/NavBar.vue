@@ -1,5 +1,5 @@
 <template>
-  <div id="nav" class="position-fixed d-block h-100">
+  <div id="nav" class="position-fixed d-block">
    
     <div id="menu">
        <div class="menu-icon" @click="extendMenu" >
@@ -63,7 +63,7 @@ export default {
       const nav_bar = document.getElementById("nav")
       this.extended = !this.extended;
       if(this.extended){
-        
+       
         nav_bar.style.width="300px";
         setTimeout(function (){links[0].style.display ="block"},300)
         
