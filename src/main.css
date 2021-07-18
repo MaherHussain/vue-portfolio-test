@@ -252,10 +252,10 @@ ul li a {
 /************************************ Home style start end ***********************************/
 
 /************************************ skills stylin0g start************************************/
-.skills {
+.skills,.portfolio {
   padding: 50px 0 !important;
 }
-.skills h1 {
+.skills h1,.portfolio h1 {
   text-transform: uppercase;
   font-weight: bold;
   background: #ffffff;
@@ -266,13 +266,13 @@ ul li a {
   -webkit-text-fill-color: transparent;
   margin: 30px auto !important;
 }
-.skill-item {
+.skill-item,.project {
   background: rgb(219,232,216);
   background: linear-gradient(90deg, rgba(219,232,216,1) 0%, rgba(0,212,255,1) 59%);
   margin: 10px 30px !important;
   padding: 10px 0 !important;
 }
-.skill-item h2 {
+.skill-item h2,.project h2 {
   display: inline-block;
   color:rgb(0, 0, 0);
   text-transform: uppercase;

@@ -1,16 +1,20 @@
 <template>
   <div class="project">
-    <h2>{{ projectName }}</h2>
-    <a href="">{{ projectLink }}</a>
+    <h2>{{ name }}</h2>
+    <a :href="link">click</a>
     <div>
-      <span v-for="(tool, index) in tools" :key="index">{{ tool }}, </span>
+      <img :src="'/imgs/projects/' + projectImg" alt="projectImg">
+      <span v-for="(tool, index) in tools" :key="tool">
+        {{ tool }}
+        <span v-if="index != tools.length - 1">-</span>
+      </span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["projectName", "projectLink", "tools"],
+  props: ["name", "link", "tools","projectImg"],
   name: "project",
 };
 </script>
