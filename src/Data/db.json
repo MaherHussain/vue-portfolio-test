@@ -65,8 +65,8 @@
     { "id": 4, "skillName": "Vue.js", "skillImg": "vue.png" },
     { "id": 5, "skillName": "Node.js", "skillImg": "node.png" },
     { "id": 6, "skillName": "wordpress", "skillImg": "wordpress.png" },
-    { "id": 7, "skillName": "git && github", "skillImg": "git.png" },
+    { "id": 7, "skillName": "git && github", "skillImg": "github.png" },
     { "id": 8, "skillName": "umbraco", "skillImg": "umbraco.png" },
-    { "id": 4, "skillName": "asp.net " ,"skillImg":"asp.png"}
+    { "id": 4, "skillName": "asp.net " ,"skillImg":"asp.jpg"}
   ]
 }

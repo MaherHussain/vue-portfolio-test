@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <div class="container-fluid p-0">
-      <div class="row">
-        <div class="col-1">
+    <div class="container-fluid p-0 m-0">
+      <div class="row ">
+        <div class="col-1 no-gutters">
           <NavBar />
         </div>
       
-        <div class="col-lg-11 " >
+        <div class="col-11 no-gutters" >
           <div class="content">
             <router-view />
           </div>
