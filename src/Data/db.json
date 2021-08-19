@@ -3,13 +3,13 @@
     {
       "id": 1,
       "projectName": "Github user search",
-      "projectImg": "github-search.jpg",
+      "projectImg": "github-search.png",
       "projectLink": "https://github-users-search-maher.herokuapp.com",
       "langs": ["react.js", "Javascript"]
     },
     {
       "id": 2,
-      "projectName": "Aarhus hostel-training project",
+      "projectName": "Aarhus hostel",
       "projectImg": "Aarhus-hostel.jpg",
       "projectLink": "https://github.com/MaherHussain/hostel-project",
       "langs": ["html5", "css3", "Javascript", "asp.net mvc5"]
@@ -19,7 +19,7 @@
       "projectName": "Skordetid",
       "projectImg": "skordetid.jpg",
       "projectLink": "https://citypolarna.se/skordetid/",
-      "langs": ["html5", "css3", "Javascript"]
+      "langs": ["html5", "css3", "Javascript","php"]
     },
     {
       "id": 4,
@@ -29,33 +29,34 @@
       "langs": ["wordpress"]
     },
 
+   
     {
       "id": 5,
-      "projectName": "portfolio-umbraco",
-      "projectImg": "portfolio-umbraco.jpg",
-      "projectLink": "http://maherweb.dk/",
-      "langs": ["umbracco", "html5", "css3"]
+      "projectName": "portfolio-react",
+      "projectImg": "portfolio-react.jpeg",
+      "projectLink": "https://maher-portfolio.netlify.app/portfolio",
+      "langs": ["react", "javascript", "css3"]
     },
     {
       "id": 6,
-      "projectName": "portfolio-react",
-      "projectImg": "portfolio-react.jpg",
-      "projectLink": "https://maher-portfolio.netlify.app/portfolio",
-      "langs": ["umbracco", "html5", "css3"]
-    },
-    {
-      "id": 7,
       "projectName": "run it ",
-      "projectImg": "runit .jpg",
+      "projectImg": "runit.jpg",
       "projectLink": "https://github.com/MaherHussain/FinalExsam",
       "langs": ["asp.net mvc5", "html5", "css3", "Javascript"]
     },
     {
-      "id": 8,
+      "id": 7,
       "projectName": "Okla køkken",
-      "projectImg": "Okla-kokken.jpg",
+      "projectImg": "Oklakokken.jpg",
       "projectLink": "http://www.oklaskoekken.dk/",
       "langs": ["umbraco", "html5", "css3", "Javascript"]
+    },
+    {
+      "id": 8,
+      "projectName": "web dev rooms",
+      "projectImg": "webdevrooms.jpg",
+      "projectLink": "https://web-dev-rooms.herokuapp.com/login",
+      "langs": [ "react", "Node", "Knex","express","storybook"]
     }
   ],
   "skills": [

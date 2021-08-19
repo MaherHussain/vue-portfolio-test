@@ -5,6 +5,7 @@ import store from "./store";
 import "./reset.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-import './main.css';
+import "./main.css";
+/* import AOS from "aos"; */
 
 createApp(App).use(store).use(router).mount("#app");

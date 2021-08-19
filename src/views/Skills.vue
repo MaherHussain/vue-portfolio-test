@@ -2,13 +2,24 @@
   <div class="skills">
     <h1>Maher's Skills</h1>
     <div class="row">
+      <div class="lds-roller" v-if="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- <div class="loading" >loading......</div> -->
       <div
         class="col-lg-3 col-md-6 col-sm-12"
         v-for="skill in skillsitems"
         :key="skill.skillName"
+        v-else
       >
         <skill :name="skill.skillName" :img="skill.skillImg" />
-        
       </div>
     </div>
   </div>
@@ -21,6 +32,7 @@ export default {
   data: () => {
     return {
       skillsitems: [],
+      loading: true,
     };
   },
   name: "skills",
@@ -31,6 +43,9 @@ export default {
     // fetch the data when the view is created and the data is
     // already being observed
     this.skillsData();
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000);
   },
   methods: {
     skillsData: function () {

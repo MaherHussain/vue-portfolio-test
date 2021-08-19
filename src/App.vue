@@ -1,15 +1,12 @@
 <template>
   <div id="app">
-    <div class="container-fluid p-0 m-0">
-      <div class="row ">
-        <div class="col-1 no-gutters">
-          <NavBar />
-        </div>
-      
-        <div class="col-11 no-gutters" >
-          <div class="content">
-            <router-view />
-          </div>
+    <div class="container-fluied ">
+      <div class="row">
+        <NavBar />
+      </div>
+      <div class="row">
+        <div class="content">
+          <router-view />
         </div>
       </div>
     </div>
@@ -18,18 +15,16 @@
 
 <script>
 import NavBar from "@/global/NavBar.vue";
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
- 
   name: "App",
   components: {
     NavBar,
-   
+  },
+  created() {
+    AOS.init();
   },
 };
 </script>
- <style src="./main.css">
-
-</style>
- 
+<style src="./main.css"></style>

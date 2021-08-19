@@ -1,42 +1,66 @@
 <template>
-  <div id="nav" class="">
-    <div class="nav-wrapper">
-      <div id="menu">
+  <div id="nav" class="nav">
+    <ul>
+      <li class="logo">
+        <h2>M@her</h2>
+      </li>
+      <li class="nav-bar">
         <div class="icons">
-          <div class="menu-icon" @click="extendMenu">
-            <i class="material-icons arrow" v-if="extended">west </i>
-            <i class="material-icons" v-else>menu</i>
-          </div>
-          <div class="nav-icons">
-            <div class="nav-icon">
-              <router-link to="/" exact
-                ><i class="material-icons"> home </i></router-link
-              >
-            </div>
-
-            <div class="nav-icon">
-              <router-link to="/portfolio"
-                ><i class="material-icons"> apps</i></router-link
-              >
-            </div>
-
-            <div class="nav-icon">
-              <router-link to="/skills"
-                ><i class="material-icons"> bolt</i></router-link
-              >
-            </div>
-          </div>
-        </div>
-        <div class="links">
           <div>
-            <router-link to="/" exact>Home</router-link>
+            <router-link class="nav-item" to="/" exact>
+              <span class="icon"  data-text="HOME"
+                ><i class="material-icons"> home </i></span
+              >
+              <!-- <span v-else class="link"> Home</span> -->
+            </router-link>
           </div>
-
-          <div><router-link to="/portfolio">Portfolio</router-link></div>
-          <div><router-link to="/skills">Skills</router-link></div>
+          <div>
+            <router-link class="nav-item" to="/portfolio">
+              <span class="icon"  data-text="PORTFOLIO"
+                ><i class="material-icons"> apps</i></span
+              >
+              <!-- <span v-else class="link" data-aos="flip-down">Portfolio</span> -->
+            </router-link>
+          </div>
+          <div>
+            <router-link class="nav-item"  to="/skills">
+              <span  class="icon"  data-text=" SKILLS"
+                ><i class="material-icons"> bolt</i></span
+              >
+             <!--  <span v-else class="link" data-aos="flip-down">Skills</span> -->
+            </router-link>
+          </div>
         </div>
-      </div>
-    </div>
+        <!-- <div class="links">
+           <div>
+               
+               <router-link to="/" exact>
+              <span v-if="!extended"><i class="material-icons" > home </i></span> 
+               <span > Home</span>
+
+              </router-link>
+
+            </div>
+            <div>
+              
+               <router-link to="/portfolio">
+                <span v-if="!extended"><i class="material-icons"> apps</i></span>
+                <span >Portfolio</span>
+               </router-link>
+
+            </div>
+            <div>
+              
+              <router-link to="/skills">
+               <span v-if="!extended"><i class="material-icons" > bolt</i></span>
+               <span >Skills</span> 
+                
+              </router-link>
+
+            </div> 
+            </div> -->
+      </li>
+    </ul>
   </div>
 </template>
 <script>
@@ -49,22 +73,35 @@ export default {
     };
   },
   name: "navBar",
+  mounted: function () {
+    setInterval(() => {
+      this.changeMenu();
+    }, 3000);
+  },
 
   methods: {
-    extendMenu: function () {
-      const links = document.getElementsByClassName("links");
-      const nav_bar = document.getElementById("nav");
-      this.extended = !this.extended;
-      if (this.extended) {
-        setTimeout(function () {
-          links[0].style.display = "block";
-        }, 300);
-        nav_bar.style.width = "300px";
-      } else {
-        links[0].style.display = "none";
+    changeMenu: function () {
+      /*  const icons = document.getElementsByClassName("icons");
+      const links = document.getElementsByClassName("links"); */
 
-        nav_bar.style.width = "126px";
-      }
+      this.extended = !this.extended;
+      /*  if(this.extended){
+          
+          icons[0].style.display ="none";
+          
+          links[0].style.display ="flex";
+         icons[0].setAttribute("data-aos", "flip-down");
+       }
+       else{
+         
+         links[0].style.display ="none"
+          icons[0].style.display ="flex"
+          links[0].setAttribute("data-aos", "flip-down");
+         
+
+       } */
+
+      
     },
   },
 };

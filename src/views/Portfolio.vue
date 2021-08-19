@@ -1,14 +1,19 @@
 <template>
   <div class="portfolio">
     <h1>maher's projects</h1>
-    <div class="row">
+    <div class="row mx-5">
       <div
         class="col-lg-3 col-md-6 col-sm-12"
         v-for="item in projetcsItems"
-        :key="item.projectName "
+        :key="item.projectName"
       >
         <!-- <h2>{{ item.projectName }}</h2> -->
-        <project :name="item.projectName" :link="item.projectLink" :tools ="item.langs" :projectImg = "item.projectImg" />
+        <project
+          :name="item.projectName"
+          :link="item.projectLink"
+          :tools="item.langs"
+          :projectImg="item.projectImg"
+        />
         <!-- <span v-for ="tool in item.langs" :key="tool">{{tool}}</span> -->
       </div>
     </div>
@@ -39,9 +44,7 @@ export default {
               data.forEach((element) => {
                 this.projetcsItems.push(element);
               });
-              console.log(data);
             });
-          console.log(this.projetcsItems);
         };
       return proFecting();
     },
